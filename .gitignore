@@ -1,0 +1,39 @@
+# === Segredos (nunca versionar — defesa em profundidade) ===
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+*secret*
+*secrets*
+credentials*
+*.credentials
+
+# === Estado de runtime do agente (mora em /srv/hermes/state na VPS, NUNCA no git) ===
+state/
+skills-pending/
+*.sqlite
+*.db
+
+# === Config local do Obsidian / editores (estado de UI, não conhecimento) ===
+.obsidian/
+.trash/
+.vscode/
+
+# === Lixo de Sistema Operacional ===
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# macOS
+.DS_Store
+.AppleDouble
+# Linux
+*~
+.directory
+
+# === Temporários ===
+*.tmp
+*.bak
+*.swp
